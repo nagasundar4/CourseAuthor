@@ -1,7 +1,7 @@
 <!-- <h1>Angular</h1> -->
 <!-- <authors></authors> -->
 <!-- <courses></courses> -->
-<!-- <app-favorite></app-favorite> -->
-<input type="text" [(ngModel)]="title">
+<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-favorite>
+<!-- <input type="text" [(ngModel)]="title">
 <br>
-{{title | titlecase}}
+{{title | titlecase}} -->

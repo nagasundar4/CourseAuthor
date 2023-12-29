@@ -17,6 +17,6 @@ export class FavoriteComponent /* implements OnInit */ {
   // ngOnInit() {}
   onClick() {
     this.isFavorite = !this.isFavorite;
-    this.change.emit();
+    this.change.emit({ newValue: this.isSelected });
   }
 }
